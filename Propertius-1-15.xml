@@ -1,0 +1,204 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xslt/teibp.xsl"?>
+<?xml-model href="file:/Users/hcayless/Development/tei-git/P5/Exemplars/tei_all.rnc" type="application/relax-ng-compact-syntax"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Propertius 1.15</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Publication Information</p>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <listWit>
+            <head>Codices</head>
+            <witness xml:id="N" n="N"><label>N</label> codex olim Neapolitanus nunc Guelferbytanus Gudianus 224. s.xii in
+              Gallia septentrionali scriptus. (Lacks IV xi 17-76).</witness>
+            <witness xml:id="A" n="A"><label>A</label> codex Leidensis Vossianus lat.O.38 (missing II i 63). c. 1230-60 pro
+              Ricardo Furniualensi scriptus.</witness>
+            <witness xml:id="T" n="T"><label>T</label> codex Vaticanus Vat.lat.3273. anno 1427 ab Antonio Beccadelio,
+              aliter Panormita, Florentiae scriptus.</witness>
+            <witness xml:id="S" n="S"><label>S</label> codex Monacensis Vniu.Cim.22 c.1460-70 a Iacopo Poggio filio
+              Bracciolinio scriptus.</witness>
+            <witness xml:id="J" n="J"><label>J</label> codex Parmensis Palatinus Par.140. Florentiae a Iohanne Andrea de
+              Colonia c.1430-45 scriptus.</witness>
+            <witness xml:id="K" n="K"><label>K</label> codex olim Lusaticus nunc Vratislauensis Vniu.Akc.1948 KN 197. anno
+              1469 Patauii scriptus, ut uidetur.</witness>
+            <witness xml:id="W" n="W"><label>W</label> codex Vaticanus Capponianus 196. c.1450-75 in Italia scriptus.
+              (lacks IV xi 63-102)</witness>
+            <witness xml:id="C" n="C"><label>C</label> codex Romanus Casanatensis 15. c.1470 a Pomponio Laeto
+              scriptus.</witness>
+          </listWit>
+          <listWit>
+            <head>Codices no longer extant</head>
+            <witness xml:id="Ω" n="Ω"><label>Ω</label> codex archetypus, uel certe codicum N et A/Π et Λ
+              consensus.</witness>
+            <witness xml:id="Λ" n="Λ"><label>Λ</label>codex hyparchetypus ex quo JKW deriuati sunt.</witness>
+            <witness xml:id="Υ" n="Υ"><label>Υ</label>codex hyparchetypus ex quo MUR deriuati sunt.</witness>
+            <witness xml:id="Ϛ" n="Ϛ"><label>Ϛ</label>Conjectures from editions before 1600.</witness>
+          </listWit>
+        </listWit>
+        <listBibl>
+          <listBibl>
+            <head>Complete Editions</head>
+            <bibl xml:id="Burman" n="Burman">Burman, P. (completed by L. van Santen) (Utrecht, 1780)</bibl>
+            <bibl xml:id="Giardina" n="Giardina">Giardina, G. (Roma, 2005)</bibl>
+            <bibl xml:id="Heyworth" n="Heyworth">Heyworth, S.J. (Oxford, 2007)</bibl>
+            <bibl xml:id="Lachmann" n="Lachmann">Lachmann, K. (Leipzig, 1816)</bibl>
+            <bibl xml:id="Müller" n="Müller">Müller, L. (Teubner; Leipzig, 1870)</bibl>
+            <bibl xml:id="Passerat" n="Passerat">Passerat, J. (Paris, 1608)</bibl>
+          </listBibl>
+          <listBibl>
+            <head>Sources of conjectures</head>
+            <bibl xml:id="Fontein" n="Fontein">Fontein, Petrus (1708-1788), emendationes eius exstant in
+              exemplari ed. Broukhusii, quae est in Bibliotheca ecclesiae Teleibaptistrium
+              Amsteldamensis</bibl>
+            <bibl xml:id="Francius" n="Francius">Francius, Petrus (Peter de Fransz, 1645-1704): condiscipulis
+              Broukhusii; notae eius adscriptae sunt in marg. edd. Passeratii 1608 Scaligeri 1577
+              (vid. Catalogum Librorum P. Francii, Amstelodami 1705, p. 148</bibl>
+            <bibl xml:id="Graevius" n="Graevius">Graevius, Joannes Georgius (Johann Georg Greffe vel Graeve)
+              1623-1708; ed. Graeviana: Cat., Tib., Prop., ex rec. Joannis Georgii Graevii [cuius
+              nomen falso usurpatur], Traiect. Rhen. 1680</bibl>
+            <bibl xml:id="Georg_" n="Georg">Georg, B. previously unpublished conjectures.</bibl>
+            <bibl xml:id="Heinsius" n="Heinsius">Heinsius</bibl>
+            <bibl xml:id="Heyworth1984" n="Heyworth (1984)">Heyworth, S.J., ‘Notes on Propertius Books I and II’, CQ 36
+              (1984), 394-405</bibl>
+            <bibl xml:id="Liberman2002" n="Liberman (2002)">Liberman, G. ‘Remarques sur le premier livre des <hi rend="italics">Élégies</hi> de Properce’, <title level="j">RPh</title> 76 (2002), 49–100.</bibl>
+            <bibl xml:id="Madvig" n="Madvig">Madvig, J.N., </bibl>
+            <bibl xml:id="Markland" n="Markland">Markland, Jeremiah (1693-1776): notae mss. inveniuntur in: Cat.,
+              Tib., Prop. ed. M. Brochard, Lutet. Paris. 1723.</bibl>
+            <bibl xml:id="Nodell" n="Nodell">Nodell, J. A.: Criticarum Observationum Libellus, Campis
+              1781.</bibl>
+            <bibl xml:id="Peerlkamp" n="Peerlkamp">Peerlkamp, P. H. S.A.P. libri IV elegia xi: rec. et illustr.
+              P.H.K. Edidit et praefatus est J. C. G. Boot, Amstelodami 1865</bibl>
+            <bibl xml:id="Pescani" n="Pescani">P. Pescani, Un disticho interpolato nella elegia 15a del primo
+              libro di Properzio. Studi Italiani di Filologia classica XV 1938, p. 323-328.</bibl>
+            <bibl xml:id="Wakefield" n="Wakefield">Wakefield, Gilbert, T. Lucretii Cari de Rerum Natura Libri Sex,
+              Londini, 1796</bibl>
+            <bibl xml:id="Wyngaarden" n="Wyngaarden">Wyngaarden</bibl>
+          </listBibl>
+        </listBibl>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div xml:space="preserve">
+           <head>XV</head>
+<ab>         
+<l n="1">Saepe ego multa tuae leuitatis <app><lem>dura</lem><rdgGrp><rdg wit="#T">iura</rdg><rdg wit="#T">iure</rdg><wit>T has iura and iure above the line, instead of marked as variant readings.</wit></rdgGrp><rdg wit="#Ϛ">signa</rdg><rdg wit="#Ϛ">damna</rdg></app> timebam,</l>
+<l n="2"><app><lem>hac</lem><rdg wit="#N">ac</rdg><wit>N omits the first letter of the second line, as usual; in F the word is added in the rubricator's hand</wit></app> tamen excepta, Cynthia, perfidia.</l>
+<l n="3">aspice me <app><lem>quanto rapiat fortuna periclo</lem><rdg source="#Markland">quanta rapiat fortuna procella</rdg></app>:</l>
+<l n="4">tu tamen in nostro lenta timore uenis,</l>
+<l n="5">et potes <app><lem>hesternos</lem><rdg wit="#S">externos</rdg></app> <app><lem>manibus</lem><rdg source="#Fontein">acubus</rdg></app> componere crines</l>
+<l n="6">et longa faciem <app><lem>quaerere desidia</lem><rdg wit="#A">quaere desidiam</rdg></app>,</l>
+<l n="7">nec minus <app><lem wit="#T #K #Υ #C">Eois</lem><wit>Colucius apparently conjectured eois, T (perhaps corrected from cois), KYC</wit><rdg wit="#N #S #J #W">et cois</rdg><rdg wit="#A">haec cois</rdg></app> pectus uariare lapillis</l>
+<app>
+  <lem>
+     <l n="8"><app><lem wit="#N #Λ">ut</lem><rdg wit="#A">et</rdg><rdg source="#Nodell">ac</rdg><rdg source="#Heyworth" cert="low">quam</rdg><wit>perhaps</wit></app> formosa nouo quae parat ire uiro.</l>
+     <l n="9"><app><lem>at</lem><rdg wit="#A">et</rdg></app> non sic, Ithaci digressu <app><lem>mota</lem><rdg source="#Graevius">immota</rdg></app>, Calypso</l>
+     <l n="10">desertis olim fleuerat aequoribus:</l>
+     <l n="11">multos illa dies incomptis maesta capillis</l>
+  </lem>
+  <rdg wit="#C"/><wit>C omits lines 8-11 because of homoeoteleuton.</wit>
+</app>
+<l n="12">sederat, <app><lem>iniusto</lem><rdg source="#Giardina">infesto</rdg><wit>Giardina 2005</wit></app> <app><lem>multa</lem><rdg source="#Müller">uana</rdg><wit>Müller</wit></app> locuta salo,</l>
+<l n="13">et quamuis numquam post haec uisura dolebat</l>
+<l n="14">illa tamen longae conscia <app><lem>laetitiae</lem><rdg wit="#Ϛ">nequitiae</rdg></app>.<app><note>There should probably be no punctuation after uisura and tamen.</note></app></l>
+<app xml:id="app-rdg-Pescani-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
+ <lem source="#Pescani">
+     <secl>
+        <l sameAs="#l15"/>
+        <l sameAs="#l16"/>
+     </secl>
+  </lem><wit>Pescani secluded these lines.</wit>
+</app>
+<l n="17">nec sic Aesoniden rapientibus anxia uentis</l>
+<app>
+  <lem><l n="18">Hypsipyle uacuo constitit in thalamo:</l></lem>
+  <rdg wit="#J"/><wit>J omits line 18, because of homoearchon</wit>
+</app>
+<l n="19">Hypsipyle nullos post <app><lem source="#Burman">illum</lem><rdg wit="#Ω">illos</rdg></app> sensit amores,</l>
+<l n="20">ut semel Haemonio tabuit hospitio.</l>
+<app xml:id="app-rdg-Markland-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Pescani-l15-l16 #app-rdg-Lachmann-l15-l16">
+  <rdg source="#Markland">
+     <l sameAs="#l15"/>
+     <l sameAs="#l16"/>
+  </rdg>
+  <wit>Markland put these lines after 20.</wit>
+</app>
+<l n="21">coniugis Evadne <app><lem>miseros</lem><rdg wit="#Ϛ">seros</rdg><rdg source="#Francius">medios</rdg></app> <app><lem source="#Lachmann">ablata</lem><rdg wit="#Ω">elata</rdg><rdg wit="#Ϛ">delata</rdg><rdg source="#Peerlkamp">laetata</rdg></app> per ignis</l>
+<l n="22">occidit, Argivae fama pudicitiae.</l>
+<app xml:id="app-rdg-Lachmann-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Pescani-l15-l16 #app-rdg-Markland-l15-l16">
+  <rdg source="#Lachmann">
+     <l sameAs="#l15"/>
+     <l sameAs="#l16"/>
+  </rdg>
+  <wit>Lachmann put these lines after 22.</wit>
+</app>
+<l n="23">quarum nulla tuos potuit convertere mores,</l>
+<l n="24">tu <app><lem>quoque</lem><rdg wit="#A"><choice><abbr>q̊</abbr><expan>quo</expan></choice></rdg></app> uti fieres nobilis historia.</l>
+<app xml:id="app-lem-l25-l26" exclude="#app-rdg-Housman-l25-26">
+  <lem>
+     <l n="25" xml:id="l25">desine iam <app><lem>reuocare</lem><rdg source="#Francius">renouare</rdg></app> tuis periuria verbis,</l>
+     <l n="26" xml:id="l26">Cynthia, et oblitos parce <app><lem>movere</lem><rdg source="#Passerat">monere</rdg></app> deos;</l>
+  </lem>
+ <wit>Heyworth does not move these lines. <ref target="#app-rdg-Housman-l25-26">Housman</ref> put them after line 32.</wit>
+</app>
+<app>
+ <lem>
+    <l n="27">audax a <app><lem>nimium</lem><rdg source="#Lachmann">nimium et</rdg></app>, nostro dolitura periclo,</l>
+    <l n="28"><app><lem>si</lem><rdg wit="#A">sed</rdg></app> <app><lem wit="#Λ">quid</lem><rdg wit="#N #A">quod</rdg></app> forte <app><lem>tibi</lem><rdg wit="#Ϛ">mihi</rdg></app> durius inciderit!</l>
+    <app>
+       <lem>
+          <l n="29" xml:id="l29"><app><lem source="#Heyworth1984">nam prius e</lem><rdg wit="#Ω">multa prius</rdg><rdg wit="#Ϛ">nulla prius</rdg><rdg source="#Burman">alta prius</rdg><rdg source="#Wakefield">pulsa prius</rdg><wit>Other conjectures exist.</wit></app> <app><lem>uasto</lem><rdg source="#Burman">retro</rdg></app> labentur flumina ponto,</l>
+          <l n="30" xml:id="l30">annus et <app><lem>inuersas</lem><rdg wit="#A">inuersis</rdg></app> duxerit ante <app><lem>uices</lem><rdg wit="#A">uicis</rdg></app>,</l>
+          <l n="31" xml:id="l31">quam tua sub nostro <app><lem>mutetur pectore</lem><rdg wit="#A">imitetur mectore</rdg></app> cura:</l>
+          <l n="32" xml:id="l32">sis quodcumque uoles, non aliena tamen.</l>
+       </lem>
+       <rdg source="#Postgate" xml:id="rdg-Postgate-l29-l32" exclude="#rdg-Georg-l27-l32">
+         <surplus>
+           <l sameAs="#l29"/>
+           <l sameAs="#l30"/>
+           <l sameAs="#l31"/>
+           <l sameAs="#l32"/>
+         </surplus>
+       </rdg><wit>Postgate considered these lines to be interpolated.</wit>
+    </app>
+ </lem>
+ <rdg source="#Georg_" xml:id="rdg-Georg-l27-l32" exclude="#rdg-Postgate-l29-l32"/><wit>Georg, in an unpublished conjecture, would remove these lines.</wit>
+</app>
+<app xml:id="app-rdg-Housman-l25-26" exclude="#app-lem-l25-l26">
+  <rdg source="#Housman">
+     <l sameAs="#l25"/>
+     <l sameAs="#l26"/>
+  </rdg>
+  <wit>Housman put these lines after 32.</wit>
+</app>
+<l n="33"><app><lem source="#Madvig">tam</lem><rdg wit="#Ω">quam</rdg></app> <app><lem>tibi</lem><rdgGrp><rdg wit="#Ϛ">mihi</rdg><rdg wit="#Ϛ" cert="low">ei mihi</rdg></rdgGrp></app> ne uiles isti uideantur ocelli,</l>
+<l n="34">per quos saepe mihi credita perfidia <app><lem>est</lem><rdg wit="#S"/><wit>Omitted by S.</wit></app>!</l>
+<l n="35">hos tu iurabas, si <app><lem>quid</lem><rdg wit="#A">quod</rdg></app> mentita fuisses,</l>
+<l n="36">ut tibi suppositis exciderent manibus:</l>
+<l n="37">et contra magnum potes hos attollere Solem?</l>
+<l n="38">nec tremis admissae conscia nequitiae?</l>
+<l n="39"><app><lem>quis</lem><rdg wit="#Ϛ">quid</rdg><wit>Ϛ, perhaps correctly</wit></app> te cogebat <app><lem>multos</lem><rdg source="#Heinsius">fictos</rdg><rdg wit="#Ϛ">multo</rdg><rdgGrp source="#Liberman2002"><rdg>pulso</rdg><rdg>uerso</rdg></rdgGrp></app> pallere <app><lem>colores</lem><rdg wit="#Ϛ">colore</rdg></app></l>
+<l n="40">et fletum invitis <app><lem>ducere</lem><wit>N prime prints ducere twice.</wit></app> luminibus?</l>
+<l n="41">quis ego nunc pereo, similis <app><lem>moniturus</lem><rdg wit="#N">moriturus</rdg><wit>N prime</wit></app> amantes:</l>
+<l n="42"><app><lem source="#Wyngaarden">non ullis</lem><rdg wit="#Ω">o nullis</rdg></app> tutum<app><lem/><rdg source="#Heyworth"> est</rdg><wit>perhaps</wit></app> credere blanditiis!</l>
+<app xml:id="app-lem-l15-l16" exclude="#app-rdg-Pescani-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
+  <rdg>
+     <surplus reason="interpolation">
+        <l n="15" xml:id="l15">Alphesiboea suos ulta est pro coniuge fratres,</l>
+        <l n="16" xml:id="l16">sanguinis et cari vincula rupit amor.</l>
+     </surplus>
+  </rdg>
+ <wit>Heyworth considers these lines to be an interpolation.</wit>
+</app></ab>
+
+         
+         </div>
+    </body>
+  </text>
+</TEI>
