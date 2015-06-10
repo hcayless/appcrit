@@ -43,7 +43,7 @@
           <listBibl>
             <head>Complete Editions</head>
             <bibl xml:id="Burman" n="Burman">Burman, P. (completed by L. van Santen) (Utrecht, 1780)</bibl>
-            <bibl xml:id="Giardina" n="Giardina">Giardina, G. (Roma, 2005)</bibl>
+            <bibl xml:id="Giardina" n="Giardina 2005">Giardina, G. (Roma, 2005)</bibl>
             <bibl xml:id="Heyworth" n="Heyworth">Heyworth, S.J. (Oxford, 2007)</bibl>
             <bibl xml:id="Lachmann" n="Lachmann">Lachmann, K. (Leipzig, 1816)</bibl>
             <bibl xml:id="Müller" n="Müller">Müller, L. (Teubner; Leipzig, 1870)</bibl>
@@ -103,7 +103,7 @@
   </lem><wit>Heyworth</wit>
   <rdg xml:id="d1e314" wit="#C"/><wit>C omits lines 8-11 because of homoeoteleuton.</wit>
 </app>
-<l n="12">sederat, <app xml:id="d1e321"><lem xml:id="d1e322">iniusto</lem><rdg xml:id="d1e324" source="#Giardina">infesto</rdg><wit>Giardina 2005</wit></app> <app xml:id="d1e329"><lem xml:id="d1e330">multa</lem><rdg xml:id="d1e332" source="#Müller">uana</rdg></app> locuta salo,</l>
+<l n="12">sederat, <app xml:id="d1e321"><lem xml:id="d1e322">iniusto</lem><rdg xml:id="d1e324" source="#Giardina">infesto</rdg></app> <app xml:id="d1e329"><lem xml:id="d1e330">multa</lem><rdg xml:id="d1e332" source="#Müller">uana</rdg></app> locuta salo,</l>
 <l n="13">et quamuis numquam post haec uisura dolebat</l>
 <l n="14">illa tamen longae conscia <app xml:id="d1e343"><lem xml:id="d1e342">laetitiae</lem><rdg xml:id="d1e344" wit="#Ϛ">nequitiae</rdg></app>.<app xml:id="d1e349"><note>There should probably be no punctuation after uisura and tamen.</note></app></l>
 <app xml:id="app-rdg-Pescani-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
@@ -126,7 +126,7 @@
      <l sameAs="#l15"/>
      <l sameAs="#l16"/>
   </rdg>
-  <wit>Markland put these lines after 20.</wit>
+  <wit>Markland put lines 15-16 after 20.</wit>
 </app>
 <l n="21">coniugis Evadne <app xml:id="d1e411"><lem xml:id="d1e410">miseros</lem><rdg xml:id="d1e412" wit="#Ϛ">seros</rdg><rdg xml:id="d1e414" source="#Francius">medios</rdg></app> <app xml:id="d1e419"><lem xml:id="d1e418" source="#Lachmann">ablata</lem><rdg xml:id="d1e420" wit="#Ω">elata</rdg><rdg xml:id="d1e422" wit="#Ϛ">delata</rdg><rdg xml:id="d1e424" source="#Peerlkamp">laetata</rdg></app> per ignis</l>
 <l n="22">occidit, Argivae fama pudicitiae.</l>
@@ -135,7 +135,7 @@
      <l sameAs="#l15"/>
      <l sameAs="#l16"/>
   </rdg>
-  <wit>Lachmann put these lines after 22.</wit>
+  <wit>Lachmann put lines 15-16 after 22.</wit>
 </app>
 <l n="23">quarum nulla tuos potuit convertere mores,</l>
 <l n="24">tu <app xml:id="d1e451"><lem xml:id="d1e450">quoque</lem><rdg xml:id="d1e452" wit="#A"><choice><abbr>q̊</abbr><expan>quo</expan></choice></rdg></app> uti fieres nobilis historia.</l>
@@ -144,7 +144,7 @@
      <l n="25" xml:id="l25">desine iam <app xml:id="d1e468"><lem xml:id="d1e467">reuocare</lem><rdg xml:id="d1e469" source="#Francius">renouare</rdg></app> tuis periuria verbis,</l>
      <l n="26" xml:id="l26">Cynthia, et oblitos parce <app xml:id="d1e477"><lem xml:id="d1e476">movere</lem><rdg xml:id="d1e478" source="#Passerat">monere</rdg></app> deos;</l>
   </lem>
- <wit>Heyworth does not move these lines. <ref target="#app-rdg-Housman-l25-26">Housman</ref> put them after line 32.</wit>
+ <wit>Housman put lines 25-26 after line 32.</wit>
 </app>
 <app xml:id="d1e493">
  <lem xml:id="d1e494">
@@ -156,7 +156,7 @@
           <l n="30" xml:id="l30">annus et <app xml:id="d1e554"><lem xml:id="d1e553">inuersas</lem><rdg xml:id="d1e555" wit="#A">inuersis</rdg></app> duxerit ante <app xml:id="d1e560"><lem xml:id="d1e559">uices</lem><rdg xml:id="d1e561" wit="#A">uicis</rdg></app>,</l>
           <l n="31" xml:id="l31">quam tua sub nostro <app xml:id="d1e569"><lem xml:id="d1e568">mutetur pectore</lem><rdg xml:id="d1e570" wit="#A">imitetur mectore</rdg></app> cura:</l>
           <l n="32" xml:id="l32">sis quodcumque uoles, non aliena tamen.</l>
-       </lem><wit>Heyworth considers these lines genuine.</wit>
+       </lem><wit>Heyworth keeps these lines.</wit>
        <rdg source="#Postgate" xml:id="rdg-Postgate-l29-l32" exclude="#rdg-Georg-l27-l32">
          <surplus>
            <l sameAs="#l29"/>
@@ -182,10 +182,10 @@
 <l n="36">ut tibi suppositis exciderent manibus:</l>
 <l n="37">et contra magnum potes hos attollere Solem?</l>
 <l n="38">nec tremis admissae conscia nequitiae?</l>
-<l n="39"><app xml:id="d1e663"><lem xml:id="d1e662">quis</lem><rdg xml:id="d1e664" wit="#Ϛ">quid</rdg><wit>Ϛ, perhaps correctly</wit></app> te cogebat <app xml:id="d1e671"><lem xml:id="d1e670">multos</lem><rdg xml:id="d1e672" source="#Heinsius">fictos</rdg><rdg xml:id="d1e674" wit="#Ϛ">multo</rdg><rdgGrp source="#Liberman2002"><rdg xml:id="d1e677">pulso</rdg><rdg xml:id="d1e679">uerso</rdg></rdgGrp></app> pallere <app xml:id="d1e684"><lem xml:id="d1e683">colores</lem><rdg xml:id="d1e685" wit="#Ϛ">colore</rdg></app></l>
-<l n="40">et fletum invitis <app xml:id="d1e692"><lem xml:id="d1e691">ducere</lem><wit>N´ prints ducere twice.</wit></app> luminibus?</l>
-<l n="41">quis ego nunc pereo, similis <app xml:id="d1e701"><lem xml:id="d1e700">moniturus</lem><rdg xml:id="d1e702" wit="#N">moriturus</rdg><wit>N´</wit></app> amantes:</l>
-<l n="42"><app xml:id="d1e711"><lem xml:id="d1e710" source="#Wyngaarden">non ullis</lem><rdg xml:id="d1e712" wit="#Ω">o nullis</rdg></app> tutum<app xml:id="d1e717"><lem xml:id="d1e716"/><rdg xml:id="d1e718" source="#Heyworth"> est</rdg><wit>perhaps</wit></app> credere blanditiis!</l>
+<l n="39"><app xml:id="d1e663"><lem xml:id="d1e662">quis</lem><rdg xml:id="d1e664" wit="#Ϛ">quid</rdg><wit>perhaps correctly</wit></app> te cogebat <app xml:id="d1e671"><lem xml:id="d1e670">multos</lem><rdg xml:id="d1e672" source="#Heinsius">fictos</rdg><rdg xml:id="d1e674" wit="#Ϛ">multo</rdg><rdgGrp source="#Liberman2002"><rdg xml:id="d1e677">pulso</rdg><rdg xml:id="d1e679">uerso</rdg></rdgGrp></app> pallere <app xml:id="d1e684"><lem xml:id="d1e683">colores</lem><rdg xml:id="d1e685" wit="#Ϛ">colore</rdg></app></l>
+<l n="40">et fletum invitis <app xml:id="d1e692"><lem xml:id="d1e691">ducere</lem><note>N at first prints ducere twice.</note></app> luminibus?</l>
+<l n="41">quis ego nunc pereo, similis <app xml:id="d1e701"><lem xml:id="d1e700">moniturus</lem><rdg xml:id="d1e702" wit="#N">moriturus</rdg><wit>at first, then corrected</wit></app> amantes:</l>
+<l n="42"><app xml:id="d1e711"><lem xml:id="d1e710" source="#Wyngaarden">non ullis</lem><rdg xml:id="d1e712" wit="#Ω">o nullis</rdg></app> tutum<app xml:id="d1e717"><lem xml:id="d1e716"/><rdg xml:id="d1e718" source="#Heyworth"> est</rdg><wit>(perhaps)</wit></app> credere blanditiis!</l>
 <app xml:id="app-lem-l15-l16" exclude="#app-rdg-Pescani-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
   <lem xml:id="d1e726">
      <surplus reason="interpolation">
