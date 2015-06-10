@@ -1,7 +1,6 @@
-var swapLem = function(rdg) {
-	var oldrdg = $("#" + rdg.attr("data-id"));
+var swapLem = function(oldrdg) {
 	if (oldrdg[0].localName == "tei-rdg") { // swapLem is a no-op if we clicked a lem
-		var app = $("#" + rdg.parents("div").first().attr("id").replace(/dialog-/,""));
+		var app = oldrdg.parents("tei-app").first();
 		var oldlem;
 		if ((oldlem = app.find(">tei-lem")).length == 0) {
 			if ((oldlem = app.find("tei-rdgGrp>tei-lem")).length == 0) {
@@ -169,6 +168,7 @@ $(function() {
 		// have to rewrite ids in copied content so there are no duplicates
 		e.find("*[id]").each(function(i, elt) {
 			$(elt).attr("id", $(elt).attr("id") + Math.random().toString(36).substr(2));
+			$(elt).addClass("app-copy");
 		});
 	});
 
@@ -197,7 +197,13 @@ $(function() {
 			app.find("tei-rdg").remove();
 		} else {
 			n = $(elt).parent("tei-l").attr("n");
+			if (!n) {
+				n = $($(elt).parent("tei-l").attr("sameAs")).attr("n");
+			}
 			$(elt).parent("tei-l").append("<button id=\"button-" + $(elt).attr("id") + "\" title=\"\" class=\"app\" data-app=\"" + $(elt).attr("id") + "\">…</button>");
+		}
+		if (!n) {
+			console.log($(elt).attr("id"));
 		}
 		app.find("tei-lem:empty").append("– ");
 		app.find("tei-rdg:empty").append("– ");
@@ -263,15 +269,18 @@ $(function() {
 			content.find("tei-lem,tei-rdg,tei-rdgGrp").each(witLabels);
 			content.find("tei-rdg,tei-lem,tei-wit[data-id]").each(function(i, elt) {
 				$(elt).click(function(evt) {
-					swapLem($(evt.currentTarget));
+					swapLem($("#" + $(evt.currentTarget).attr("data-id")));
 				});
 			});
 	});
-
+	// Link up sigla in the apparatus to bibliography
 	$("span.ref").each(function(i, elt) {
 		$(elt).attr("title","");
 		$(elt).tooltip({
 			content: "<div class=\"ref\">" + $($(elt).attr("data-ref")).html() + "</div>",
 		});
 	});
+	if (window.location.search) {
+
+	}
 });

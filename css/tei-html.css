@@ -73,6 +73,9 @@ border-top:2px solid @border-color;
 div.apparatus tei-app {
   display: inline;
 }
+div.apparatus tei-app.app-copy {
+  display: none;
+}
 div.apparatus tei-app span.source {
   font-weight: normal;
   margin-right: .5em;
