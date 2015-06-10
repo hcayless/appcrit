@@ -116,7 +116,7 @@
 </app>
 <l n="17">nec sic Aesoniden rapientibus anxia uentis</l>
 <app xml:id="d1e372">
-  <lem xml:id="d1e373"><l n="18">Hypsipyle uacuo constitit in thalamo:</l></lem>
+  <lem xml:id="d1e373"><l n="18">Hypsipyle uacuo constitit in thalamo:</l></lem><wit>line 18;</wit>
   <rdg xml:id="d1e376" wit="#J"/><wit>J omits line 18, because of homoearchon</wit>
 </app>
 <l n="19">Hypsipyle nullos post <app xml:id="d1e385"><lem xml:id="d1e384" source="#Burman">illum</lem><rdg xml:id="d1e386" wit="#Ω">illos</rdg></app> sensit amores,</l>
