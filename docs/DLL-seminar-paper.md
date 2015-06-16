@@ -79,8 +79,11 @@ The proposals presented here cover a lot of ground: they involve the acceptance 
 
 ## References
 <a nam="1">1.</a> Here, I am using the term "work" in more or less the way Bordalejo (2013) does: "the work is a conception in the mind of an author at a particular point in time that serves as a minimal denominator to identify its remaining physical manifestations." 
+
 <a nam="2">2.</a> If our publication workflow involves (1) a TEI document, processed by (2) XSLT, output to (3) HTML, which is decorated using (4) CSS and Javascript, then customization of the publication hinges on what can be done to #3, which depends not just on #4, but what #1 contains and what #2 is able to output. Customization therefore implicates (potentially) the entire workflow.
+
 <a nam="3">3.</a> Pierazzo hedges her bets in her 2011 article, demonstrating clearly the differences involved in digital documentary editions and concluding that "ultimately their very natures are substantially, if not ontologically, different." Bordalejo argues, correctly I think, that the key distinction is not one of substance, but of subject, that there is indeed no ontological distinction between digital and non-digital editions.
+
 <a name="4">4.</a> Moreover, it does not play well with `<note>` and `<witDetail>`, which also record information from the apparatus.
 
 ## Bibliography (incomplete)
