@@ -95,6 +95,30 @@ var swapLem = function(oldrdg) {
 		}
 	}
 };
+var applyWit = function(wit) {
+	$("tei-text tei-rdg[wit]").each(function(i,elt) {
+		var foo = $(elt);
+		if (!foo.attr("sameAs")) {
+			foo.attr("wit").split(/ /).forEach(function(val) {
+				if (val == wit) {
+					swapLem(foo);
+				}
+			});
+		}
+	});
+}
+var applySource = function(source) {
+	$("tei-text tei-rdg[source]").each(function(i,elt){
+		var foo = $(elt);
+		if (!foo.attr("sameAs")) {
+			foo.attr("source").split(/ /).forEach(function(val) {
+				if (val == source) {
+					swapLem(foo);
+				}
+			});
+		}
+	});
+}
 var ttip = function(elt) {
 	return {
 		content: "<div class=\"apparatus\">" + $("#copy-" + $(elt).attr("data-app")).html() + "</div>",
@@ -139,6 +163,7 @@ var appToolTips = function() {
 		});
 	});
 }
+// Execute after the document is loaded
 $(function() {
 	// Add Apparatus div
 	$("tei-TEI").after("<div id=\"apparatus\" class=\"apparatus\"><h2>Apparatus</h2></div>");
@@ -150,15 +175,15 @@ $(function() {
 		var source = "";
 		if ($(elt).attr("wit")) {
 			$(elt).attr("wit").split(/ /).forEach(function(val) {
-				wit += "<span class=\"ref\" data-ref=\"" + val + "\">" + $(val).attr("n") + "</span>";
+				wit += "<span class=\"ref\" data-id=\"" + $(elt).attr("id") + "\" data-ref=\"" + val + "\">" + $(val).attr("n") + "</span>";
 			});
 		}
 		if ($(elt).attr("source")) {
 			$(elt).attr("source").split(/ /).forEach(function(val) {
-				source += "<span class=\"ref\" data-ref=\"" + val + "\">" + $(val).attr("n") + "</span>";
+				source += "<span class=\"ref\" data-id=\"" + $(elt).attr("id") + "\" data-ref=\"" + val + "\">" + $(val).attr("n") + "</span>";
 			});
 		}
-		$(elt).append(" <span class=\"source\">" + wit + " " + source + "</span>");
+		$(elt).after(" <span class=\"source\">" + wit + " " + source + "</span>");
 	}
 
 	// Pull content into @sameAs elements
@@ -167,15 +192,20 @@ $(function() {
 		e.html($(e.attr("sameAs")).clone().contents());
 		// have to rewrite ids in copied content so there are no duplicates
 		e.find("*[id]").each(function(i, elt) {
+			$(elt).attr("sameAs", "#" + $(elt).attr("id"));
 			$(elt).attr("id", $(elt).attr("id") + Math.random().toString(36).substr(2));
+			$($(elt).attr("sameAs")).attr("data-copy", "#" + $(elt).attr("id"));
 			$(elt).addClass("app-copy");
 		});
 	});
 
+	//TODO: Refactor to support deciding which apparatus function to apply
+	//			based on its context. E.g., apps with lem/rdg that contain lines
 	$("tei-app").each(function(i, elt) {
 		var app = $(elt).clone();
 		var n, lines
 		app.attr("id", "copy-" + app.attr("id"));
+		app.find("tei-lem,tei-rdg,tei-rdgGrp").each(witLabels);
 		if ((lines = app.find("tei-l")).length > 0) {
 			n = $(lines[0]).attr("n");
 			if (!n) {
@@ -202,15 +232,11 @@ $(function() {
 			}
 			$(elt).parent("tei-l").append("<button id=\"button-" + $(elt).attr("id") + "\" title=\"\" class=\"app\" data-app=\"" + $(elt).attr("id") + "\">…</button>");
 		}
-		if (!n) {
-			console.log($(elt).attr("id"));
-		}
-		app.find("tei-lem:empty").append("– ");
-		app.find("tei-rdg:empty").append("– ");
+		app.find("tei-lem:empty").append("— ");
+		app.find("tei-rdg:empty").append("— ");
 		if ($("#app-l" + n).length == 0 || lines.length > 0) {
-			app.prepend("<span id=\"app-l" + n +"\">" + n + "</span>");
+			app.prepend("<span class=\"lem\" id=\"app-l" + n +"\">" + n + "</span>");
 		}
-		app.find("tei-lem,tei-rdg,tei-rdgGrp").each(witLabels);
 		app.find("tei-lem,tei-rdg").removeAttr("id");
 		$("div#apparatus").append(app);
 	});
@@ -236,12 +262,18 @@ $(function() {
 			"data-exclude": dialog.attr("exclude")});
 		content.appendTo("body");
 		content.html(dialog.html());
+		if (dialog.attr("exclude")) {
+			dialog.attr("exclude").split(/ /).forEach(function(val) {
+				content.append($(val).html());
+			});
+		}
+		content.find("tei-lem,tei-rdg,tei-rdgGrp").each(witLabels);
 		content.find("*[id]").each(function(i, elt) {
 			$(elt).attr("data-id", $(elt).attr("id"));
 		});
 		content.find("*[id]").removeAttr("id");
-		content.find("tei-wit").each(function(i, elt) {
-			$(elt).attr("data-id", $(elt).prevAll("tei-rdg,tei-lem").first().attr("data-id"));
+		content.find("tei-note[target]").each(function(i, elt) {
+			$(elt).attr("data-id", $(elt).attr("target").replace(/#/, ""));
 		});
 		if ($(elt).find("tei-l").length > 0) {
 			content.find("tei-lem,tei-rdg,tei-rdgGrp").remove();
@@ -266,10 +298,16 @@ $(function() {
 					appToolTips();
 				}
 			});
-			content.find("tei-lem,tei-rdg,tei-rdgGrp").each(witLabels);
-			content.find("tei-rdg,tei-lem,tei-wit[data-id]").each(function(i, elt) {
+			content.find("tei-rdg,tei-lem,tei-note[data-id],span[data-id]").each(function(i, elt) {
 				$(elt).click(function(evt) {
-					swapLem($("#" + $(evt.currentTarget).attr("data-id")));
+					var rdg = $("#" + $(evt.currentTarget).attr("data-id"));
+					swapLem(rdg);
+					if (rdg.attr("sameAs")) {
+						swapLem($(rdg.attr("sameAs")));
+					}
+					if (rdg.attr("data-copy")) {
+						swapLem($(rdg.attr("data-copy")));
+					}
 				});
 			});
 	});
@@ -280,7 +318,26 @@ $(function() {
 			content: "<div class=\"ref\">" + $($(elt).attr("data-ref")).html() + "</div>",
 		});
 	});
+	// Mark all lems as original
+	$("tei-lem").attr("data-basetext","");
 	if (window.location.search) {
-
+		//TODO: Allow user to load document recipes.
 	}
+	/*
+	$("span.source").each(function(i, elt) {
+		var source = $(elt);
+		if (source.children("*").length > 0) {
+			if (source.next("tei-note").length > 0) {
+				source = source.next("tei-note");
+			}
+			if (source.nextAll("span.source").length > 0) {
+				if (source.children("*").length > 0) {
+					source.children("*").last().append(":");
+				} else {
+					source.append(":");
+				}
+			}
+		}
+	});
+	*/
 });
