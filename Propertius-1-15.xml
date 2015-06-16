@@ -7,36 +7,36 @@
         <title>Propertius 1.15</title>
       </titleStmt>
       <publicationStmt>
-        <p>Publication Information</p>
+        <p>Electronic edition, based primarily on Heyworth's 2007 OCT.</p>
       </publicationStmt>
       <sourceDesc>
         <listWit>
           <listWit>
             <head>Codices</head>
-            <witness xml:id="N" n="N"><label>N</label> codex olim Neapolitanus nunc Guelferbytanus Gudianus 224. s.xii in
+            <witness xml:id="N" n="N"><label>N</label>—codex olim Neapolitanus nunc Guelferbytanus Gudianus 224. s.xii in
               Gallia septentrionali scriptus. (Lacks IV xi 17-76).</witness>
-            <witness xml:id="A" n="A"><label>A</label> codex Leidensis Vossianus lat.O.38 (missing II i 63). c. 1230-60 pro
+            <witness xml:id="A" n="A"><label>A</label>—codex Leidensis Vossianus lat.O.38 (missing II i 63). c. 1230-60 pro
               Ricardo Furniualensi scriptus.</witness>
-            <witness xml:id="T" n="T"><label>T</label> codex Vaticanus Vat.lat.3273. anno 1427 ab Antonio Beccadelio,
+            <witness xml:id="T" n="T"><label>T</label>—codex Vaticanus Vat.lat.3273. anno 1427 ab Antonio Beccadelio,
               aliter Panormita, Florentiae scriptus.</witness>
-            <witness xml:id="S" n="S"><label>S</label> codex Monacensis Vniu.Cim.22 c.1460-70 a Iacopo Poggio filio
+            <witness xml:id="S" n="S"><label>S</label>—codex Monacensis Vniu.Cim.22 c.1460-70 a Iacopo Poggio filio
               Bracciolinio scriptus.</witness>
-            <witness xml:id="J" n="J"><label>J</label> codex Parmensis Palatinus Par.140. Florentiae a Iohanne Andrea de
+            <witness xml:id="J" n="J"><label>J</label>—codex Parmensis Palatinus Par.140. Florentiae a Iohanne Andrea de
               Colonia c.1430-45 scriptus.</witness>
-            <witness xml:id="K" n="K"><label>K</label> codex olim Lusaticus nunc Vratislauensis Vniu.Akc.1948 KN 197. anno
+            <witness xml:id="K" n="K"><label>K</label>—codex olim Lusaticus nunc Vratislauensis Vniu.Akc.1948 KN 197. anno
               1469 Patauii scriptus, ut uidetur.</witness>
-            <witness xml:id="W" n="W"><label>W</label> codex Vaticanus Capponianus 196. c.1450-75 in Italia scriptus.
+            <witness xml:id="W" n="W"><label>W</label>—codex Vaticanus Capponianus 196. c.1450-75 in Italia scriptus.
               (lacks IV xi 63-102)</witness>
-            <witness xml:id="C" n="C"><label>C</label> codex Romanus Casanatensis 15. c.1470 a Pomponio Laeto
+            <witness xml:id="C" n="C"><label>C</label>—codex Romanus Casanatensis 15. c.1470 a Pomponio Laeto
               scriptus.</witness>
           </listWit>
           <listWit>
             <head>Codices no longer extant</head>
-            <witness xml:id="Ω" n="Ω"><label>Ω</label> codex archetypus, uel certe codicum N et A/Π et Λ
+            <witness xml:id="Ω" n="Ω"><label>Ω</label>—codex archetypus, uel certe codicum N et A/Π et Λ
               consensus.</witness>
-            <witness xml:id="Λ" n="Λ"><label>Λ</label> codex hyparchetypus ex quo JKW deriuati sunt.</witness>
-            <witness xml:id="Υ" n="Υ"><label>Υ</label> codex hyparchetypus ex quo MUR deriuati sunt.</witness>
-            <witness xml:id="Ϛ" n="Ϛ"><label>Ϛ</label> Conjectures from editions before 1600.</witness>
+            <witness xml:id="Λ" n="Λ"><label>Λ</label>—codex hyparchetypus ex quo JKW deriuati sunt.</witness>
+            <witness xml:id="Υ" n="Υ"><label>Υ</label>—codex hyparchetypus ex quo MUR deriuati sunt.</witness>
+            <witness xml:id="Ϛ" n="Ϛ"><label>Ϛ</label>—Conjectures from editions before 1600.</witness>
           </listWit>
         </listWit>
         <listBibl>
@@ -44,10 +44,11 @@
             <head>Complete Editions</head>
             <bibl xml:id="Burman" n="Burman">Burman, P. (completed by L. van Santen) (Utrecht, 1780)</bibl>
             <bibl xml:id="Giardina" n="Giardina 2005">Giardina, G. (Roma, 2005)</bibl>
-            <bibl xml:id="Heyworth" n="Heyworth">Heyworth, S.J. (Oxford, 2007)</bibl>
+            <bibl xml:id="Heyworth" n="Heyworth (base text)">Heyworth, S.J. (Oxford, 2007)</bibl>
             <bibl xml:id="Lachmann" n="Lachmann">Lachmann, K. (Leipzig, 1816)</bibl>
             <bibl xml:id="Müller" n="Müller">Müller, L. (Teubner; Leipzig, 1870)</bibl>
             <bibl xml:id="Passerat" n="Passerat">Passerat, J. (Paris, 1608)</bibl>
+            <bibl xml:id="Postgate" n="Postgate">Postgate, J.P., in <title>Corpus Poetrarum Latinorum</title> (London, 1827)</bibl>
           </listBibl>
           <listBibl>
             <head>Sources of conjectures</head>
@@ -61,11 +62,12 @@
               1623-1708; ed. Graeviana: Cat., Tib., Prop., ex rec. Joannis Georgii Graevii [cuius
               nomen falso usurpatur], Traiect. Rhen. 1680</bibl>
             <bibl xml:id="Georg_" n="Georg">Georg, B. previously unpublished conjectures.</bibl>
-            <bibl xml:id="Heinsius" n="Heinsius">Heinsius</bibl>
+            <bibl xml:id="Heinsius" n="Heinsius">Heinsius, Nicolaus (Niklaas) (1620-1681): Adversariorum Libri IV (ed. P. Burman), Harlingen 1742, quibus accedunt Notae Propertianae, cura J. Broukhusii congestae.</bibl>
             <bibl xml:id="Heyworth1984" n="Heyworth (1984)">Heyworth, S.J., ‘Notes on Propertius Books I and II’, CQ 36
               (1984), 394-405</bibl>
+            <bibl xml:id="Housman" n="Housman">Housman, A.E., <title>The Classical Papers of A.E.Housman</title> (3 vols., ed J. Diggle &amp; F.R.D. Goodyear, 1972)</bibl>
             <bibl xml:id="Liberman2002" n="Liberman (2002)">Liberman, G. ‘Remarques sur le premier livre des <hi rend="italics">Élégies</hi> de Properce’, <title level="j">RPh</title> 76 (2002), 49–100.</bibl>
-            <bibl xml:id="Madvig" n="Madvig">Madvig, J.N., </bibl>
+            <bibl xml:id="Madvig" n="Madvig">Madvig, J.N., Adversaria Critica II, Hauniae 1873, pp 62 sqq.</bibl>
             <bibl xml:id="Markland" n="Markland">Markland, Jeremiah (1693-1776): notae mss. inveniuntur in: Cat.,
               Tib., Prop. ed. M. Brochard, Lutet. Paris. 1723.</bibl>
             <bibl xml:id="Nodell" n="Nodell">Nodell, J. A.: Criticarum Observationum Libellus, Campis
@@ -76,7 +78,7 @@
               libro di Properzio. Studi Italiani di Filologia classica XV 1938, p. 323-328.</bibl>
             <bibl xml:id="Wakefield" n="Wakefield">Wakefield, Gilbert, T. Lucretii Cari de Rerum Natura Libri Sex,
               Londini, 1796</bibl>
-            <bibl xml:id="Wyngaarden" n="Wyngaarden">Wyngaarden</bibl>
+            <bibl xml:id="Wyngaarden" n="Wyngaarden">Wyngaarden, S. Gymnasii Campensis Rector: Bibliotheca Critica, Amstelodami 1799-1808, Pars III, pp. 110-113 (censura editionis F. G. Barthii); pars V, pp. 133-4; pars VI, pp. 1-25 (censura ed. Burmanii); pars XII, p. 5, pp. 48-52.</bibl>
           </listBibl>
         </listBibl>
       </sourceDesc>
@@ -87,37 +89,37 @@
       <div xml:space="preserve">
            <head>XV</head>
 <ab>         
-<l n="1">Saepe ego multa tuae leuitatis <app xml:id="d1e199"><lem xml:id="d1e200">dura</lem><rdgGrp><rdg xml:id="d1e203" wit="#T">iura</rdg><rdg xml:id="d1e205" wit="#T">iure</rdg><wit>T has iura and iure above the line, instead of marked as variant readings.</wit></rdgGrp><rdg xml:id="d1e209" wit="#Ϛ">signa</rdg><rdg xml:id="d1e211" wit="#Ϛ">damna</rdg></app> timebam,</l>
-<l n="2"><app xml:id="d1e216"><lem xml:id="d1e217">hac</lem><rdg xml:id="d1e219" wit="#N">ac</rdg><wit>N omits the first letter of the second line, as usual; in F the word is added in the rubricator's hand</wit></app> tamen excepta, Cynthia, perfidia.</l>
+<l n="1">Saepe ego multa tuae leuitatis <app xml:id="d1e199"><lem xml:id="d1e200">dura</lem><rdgGrp><rdg xml:id="d1e203" wit="#T">iura</rdg><rdg xml:id="d1e205" wit="#T">iure</rdg></rdgGrp><note>—T has iura and iure above the line, instead of marked as variant readings.</note><rdg xml:id="d1e209" wit="#Ϛ">signa</rdg><rdg xml:id="d1e211" wit="#Ϛ">damna</rdg></app> timebam,</l>
+<l n="2"><app xml:id="d1e216"><lem xml:id="d1e217">hac</lem><rdg xml:id="d1e219" wit="#N">ac</rdg><note target="#d1e219">omits the first letter of the second line, as usual; in F the word is added in the rubricator's hand</note></app> tamen excepta, Cynthia, perfidia.</l>
 <l n="3">aspice me <app xml:id="d1e227"><lem xml:id="d1e228">quanto rapiat fortuna periclo</lem><rdg xml:id="d1e230" source="#Markland">quanta rapiat fortuna procella</rdg></app>:</l>
 <l n="4">tu tamen in nostro lenta timore uenis,</l>
 <l n="5">et potes <app xml:id="d1e239"><lem xml:id="d1e240">hesternos</lem><rdg xml:id="d1e242" wit="#S">externos</rdg></app> <app xml:id="d1e245"><lem xml:id="d1e246">manibus</lem><rdg xml:id="d1e248" source="#Fontein">acubus</rdg></app> componere crines</l>
 <l n="6">et longa faciem <app xml:id="d1e255"><lem xml:id="d1e256">quaerere desidia</lem><rdg xml:id="d1e258" wit="#A">quaere desidiam</rdg></app>,</l>
-<l n="7">nec minus <app xml:id="d1e264"><lem xml:id="d1e265" wit="#T #K #Υ #C">Eois</lem><wit>Colucius apparently conjectured eois, T (perhaps corrected from cois), KYC</wit><rdg xml:id="d1e269" wit="#N #S #J #W">et cois</rdg><rdg xml:id="d1e271" wit="#A">haec cois</rdg></app> pectus uariare lapillis</l>
+<l n="7">nec minus <app xml:id="d1e264"><lem xml:id="d1e265" wit="#T #K #Υ #C">Eois</lem><note target="#d1e265">Colucius apparently conjectured eois, T's reading may be corrected from cois</note><rdg xml:id="d1e269" wit="#N #S #J #W">et cois</rdg><rdg xml:id="d1e271" wit="#A">haec cois</rdg></app> pectus uariare lapillis</l>
 <app xml:id="d1e275">
-  <lem xml:id="d1e277">
-     <l n="8"><app xml:id="d1e280"><lem xml:id="d1e281" wit="#N #Λ">ut</lem><rdg xml:id="d1e283" wit="#A">et</rdg><rdg xml:id="d1e285" source="#Nodell">ac</rdg><rdg xml:id="d1e287" source="#Heyworth" cert="low">quam</rdg><wit>perhaps</wit></app> formosa nouo quae parat ire uiro.</l>
+  <lem xml:id="d1e277" source="#Heyworth">
+     <l n="8"><app xml:id="d1e280"><lem xml:id="d1e281" wit="#N #Λ">ut</lem><rdg xml:id="d1e283" wit="#A">et</rdg><rdg xml:id="d1e285" source="#Nodell">ac</rdg> <note target="#d1e287">perhaps</note><rdg xml:id="d1e287" source="#Heyworth" cert="low">quam</rdg></app> formosa nouo quae parat ire uiro.</l>
      <l n="9"><app xml:id="d1e294"><lem xml:id="d1e295">at</lem><rdg xml:id="d1e297" wit="#A">et</rdg></app> non sic, Ithaci digressu <app xml:id="d1e300"><lem xml:id="d1e301">mota</lem><rdg xml:id="d1e303" source="#Graevius">immota</rdg></app>, Calypso</l>
      <l n="10">desertis olim fleuerat aequoribus:</l>
      <l n="11">multos illa dies incomptis maesta capillis</l>
-  </lem><wit>Heyworth</wit>
-  <rdg xml:id="d1e314" wit="#C"/><wit>C omits lines 8-11 because of homoeoteleuton.</wit>
+  </lem>
+  <rdg xml:id="d1e314" wit="#C"/><note target="#d1e314">omits lines 8-11 because of homoeoteleuton.</note>
 </app>
 <l n="12">sederat, <app xml:id="d1e321"><lem xml:id="d1e322">iniusto</lem><rdg xml:id="d1e324" source="#Giardina">infesto</rdg></app> <app xml:id="d1e329"><lem xml:id="d1e330">multa</lem><rdg xml:id="d1e332" source="#Müller">uana</rdg></app> locuta salo,</l>
 <l n="13">et quamuis numquam post haec uisura dolebat</l>
-<l n="14">illa tamen longae conscia <app xml:id="d1e343"><lem xml:id="d1e342">laetitiae</lem><rdg xml:id="d1e344" wit="#Ϛ">nequitiae</rdg></app>.<app xml:id="d1e349"><note>There should probably be no punctuation after uisura and tamen.</note></app></l>
+<l n="14">illa tamen longae conscia <app xml:id="d1e343"><lem xml:id="d1e342">laetitiae</lem><rdg xml:id="d1e344" wit="#Ϛ">nequitiae</rdg></app>.<app xml:id="d1e349"><note target="d1e349">There should probably be no punctuation after uisura and tamen.</note></app></l>
 <app xml:id="app-rdg-Pescani-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
  <rdg xml:id="d1e354" source="#Pescani">
      <secl>
         <l sameAs="#l15"/>
         <l sameAs="#l16"/>
      </secl>
-  </rdg><wit>Pescani secluded these lines.</wit>
+  </rdg><note target="#d1e354">secluded these lines.</note>
 </app>
 <l n="17">nec sic Aesoniden rapientibus anxia uentis</l>
 <app xml:id="d1e372">
-  <lem xml:id="d1e373"><l n="18">Hypsipyle uacuo constitit in thalamo:</l></lem><wit>line 18;</wit>
-  <rdg xml:id="d1e376" wit="#J"/><wit>J omits line 18, because of homoearchon</wit>
+  <lem xml:id="d1e373" source="#Heyworth"><l n="18">Hypsipyle uacuo constitit in thalamo:</l></lem>
+  <rdg xml:id="d1e376" wit="#J"/><note target="#d1e376">omits line 18, because of homoearchon</note>
 </app>
 <l n="19">Hypsipyle nullos post <app xml:id="d1e385"><lem xml:id="d1e384" source="#Burman">illum</lem><rdg xml:id="d1e386" wit="#Ω">illos</rdg></app> sensit amores,</l>
 <l n="20">ut semel Haemonio tabuit hospitio.</l>
@@ -126,7 +128,7 @@
      <l sameAs="#l15"/>
      <l sameAs="#l16"/>
   </rdg>
-  <wit>Markland put lines 15-16 after 20.</wit>
+  <note target="#d1e395">moved lines 15-16 after 20.</note>
 </app>
 <l n="21">coniugis Evadne <app xml:id="d1e411"><lem xml:id="d1e410">miseros</lem><rdg xml:id="d1e412" wit="#Ϛ">seros</rdg><rdg xml:id="d1e414" source="#Francius">medios</rdg></app> <app xml:id="d1e419"><lem xml:id="d1e418" source="#Lachmann">ablata</lem><rdg xml:id="d1e420" wit="#Ω">elata</rdg><rdg xml:id="d1e422" wit="#Ϛ">delata</rdg><rdg xml:id="d1e424" source="#Peerlkamp">laetata</rdg></app> per ignis</l>
 <l n="22">occidit, Argivae fama pudicitiae.</l>
@@ -135,28 +137,27 @@
      <l sameAs="#l15"/>
      <l sameAs="#l16"/>
   </rdg>
-  <wit>Lachmann put lines 15-16 after 22.</wit>
+  <note target="#d1e433">moved lines 15-16 after 22.</note>
 </app>
 <l n="23">quarum nulla tuos potuit convertere mores,</l>
 <l n="24">tu <app xml:id="d1e451"><lem xml:id="d1e450">quoque</lem><rdg xml:id="d1e452" wit="#A"><choice><abbr>q̊</abbr><expan>quo</expan></choice></rdg></app> uti fieres nobilis historia.</l>
 <app xml:id="app-lem-l25-l26" exclude="#app-rdg-Housman-l25-26">
-  <lem xml:id="d1e462">
+  <lem xml:id="d1e462" source="#Heyworth">
      <l n="25" xml:id="l25">desine iam <app xml:id="d1e468"><lem xml:id="d1e467">reuocare</lem><rdg xml:id="d1e469" source="#Francius">renouare</rdg></app> tuis periuria verbis,</l>
      <l n="26" xml:id="l26">Cynthia, et oblitos parce <app xml:id="d1e477"><lem xml:id="d1e476">movere</lem><rdg xml:id="d1e478" source="#Passerat">monere</rdg></app> deos;</l>
   </lem>
- <wit>Housman put lines 25-26 after line 32.</wit>
 </app>
 <app xml:id="d1e493">
- <lem xml:id="d1e494">
+ <lem xml:id="d1e494" source="#Heyworth">
     <l n="27">audax a <app xml:id="d1e499"><lem xml:id="d1e498">nimium</lem><rdg xml:id="d1e500" source="#Lachmann">nimium et</rdg></app>, nostro dolitura periclo,</l>
     <l n="28"><app xml:id="d1e507"><lem xml:id="d1e506">si</lem><rdg xml:id="d1e508" wit="#A">sed</rdg></app> <app xml:id="d1e513"><lem xml:id="d1e512" wit="#Λ">quid</lem><rdg xml:id="d1e514" wit="#N #A">quod</rdg></app> forte <app xml:id="d1e519"><lem xml:id="d1e518">tibi</lem><rdg xml:id="d1e520" wit="#Ϛ">mihi</rdg></app> durius inciderit!</l>
     <app xml:id="d1e526">
        <lem xml:id="d1e527" source="#Heyworth">
-          <l n="29" xml:id="l29"><app xml:id="d1e531"><lem xml:id="d1e530" source="#Heyworth1984">nam prius e</lem><rdg xml:id="d1e532" wit="#Ω">multa prius</rdg><rdg xml:id="d1e534" wit="#Ϛ">nulla prius</rdg><rdg xml:id="d1e536" source="#Burman">alta prius</rdg><rdg xml:id="d1e538" source="#Wakefield">pulsa prius</rdg><wit>Other conjectures exist.</wit></app> <app xml:id="d1e545"><lem xml:id="d1e544">uasto</lem><rdg xml:id="d1e546" source="#Burman">retro</rdg></app> labentur flumina ponto,</l>
+          <l n="29" xml:id="l29"><app xml:id="d1e531"><lem xml:id="d1e530" source="#Heyworth1984">nam prius e</lem><rdg xml:id="d1e532" wit="#Ω">multa prius</rdg><rdg xml:id="d1e534" wit="#Ϛ">nulla prius</rdg><rdg xml:id="d1e536" source="#Burman">alta prius</rdg><rdg xml:id="d1e538" source="#Wakefield">pulsa prius</rdg><note>Other conjectures exist.</note></app> <app xml:id="d1e545"><lem xml:id="d1e544">uasto</lem><rdg xml:id="d1e546" source="#Burman">retro</rdg></app> labentur flumina ponto,</l>
           <l n="30" xml:id="l30">annus et <app xml:id="d1e554"><lem xml:id="d1e553">inuersas</lem><rdg xml:id="d1e555" wit="#A">inuersis</rdg></app> duxerit ante <app xml:id="d1e560"><lem xml:id="d1e559">uices</lem><rdg xml:id="d1e561" wit="#A">uicis</rdg></app>,</l>
           <l n="31" xml:id="l31">quam tua sub nostro <app xml:id="d1e569"><lem xml:id="d1e568">mutetur pectore</lem><rdg xml:id="d1e570" wit="#A">imitetur mectore</rdg></app> cura:</l>
           <l n="32" xml:id="l32">sis quodcumque uoles, non aliena tamen.</l>
-       </lem><wit>Heyworth keeps these lines.</wit>
+       </lem>
        <rdg source="#Postgate" xml:id="rdg-Postgate-l29-l32" exclude="#rdg-Georg-l27-l32">
          <surplus>
            <l sameAs="#l29"/>
@@ -164,36 +165,36 @@
            <l sameAs="#l31"/>
            <l sameAs="#l32"/>
          </surplus>
-       </rdg><wit>Postgate considered these lines to be interpolated.</wit>
+       </rdg><note target="#rdg-Postgate-l29-l32">considered these lines to be interpolated.</note>
     </app>
- </lem><wit>Heyworth keeps these lines</wit>
- <rdg source="#Georg_" xml:id="rdg-Georg-l27-l32" exclude="#rdg-Postgate-l29-l32"/><wit>Georg, in an unpublished conjecture, would remove them.</wit>
+ </lem>
+ <rdg source="#Georg_" xml:id="rdg-Georg-l27-l32" exclude="#rdg-Postgate-l29-l32"/><note target="#rdg-Georg-l27-l32">in an unpublished conjecture, would remove these lines.</note>
 </app>
 <app xml:id="app-rdg-Housman-l25-26" exclude="#app-lem-l25-l26">
   <rdg xml:id="d1e603" source="#Housman">
      <l sameAs="#l25"/>
      <l sameAs="#l26"/>
   </rdg>
-  <wit>Housman put these lines after 32.</wit>
+  <note target="#d1e603">put these lines after 32.</note>
 </app>
 <l n="33"><app xml:id="d1e617"><lem xml:id="d1e616" source="#Madvig">tam</lem><rdg xml:id="d1e618" wit="#Ω">quam</rdg></app> <app xml:id="d1e623"><lem xml:id="d1e622">tibi</lem><rdgGrp><rdg xml:id="d1e625" wit="#Ϛ">mihi</rdg><rdg xml:id="d1e627" wit="#Ϛ" cert="low">ei mihi</rdg></rdgGrp></app> ne uiles isti uideantur ocelli,</l>
-<l n="34">per quos saepe mihi credita perfidia<app xml:id="d1e635"><lem xml:id="d1e634"> est</lem><rdg xml:id="d1e636" wit="#S"/><wit>Omitted by S.</wit></app>!</l>
+<l n="34">per quos saepe mihi credita perfidia<app xml:id="d1e635"><lem xml:id="d1e634"> est</lem><rdg xml:id="d1e636" wit="#S"/><note target="#d1e636">omits</note></app>!</l>
 <l n="35">hos tu iurabas, si <app xml:id="d1e645"><lem xml:id="d1e644">quid</lem><rdg xml:id="d1e646" wit="#A">quod</rdg></app> mentita fuisses,</l>
 <l n="36">ut tibi suppositis exciderent manibus:</l>
 <l n="37">et contra magnum potes hos attollere Solem?</l>
 <l n="38">nec tremis admissae conscia nequitiae?</l>
-<l n="39"><app xml:id="d1e663"><lem xml:id="d1e662">quis</lem><rdg xml:id="d1e664" wit="#Ϛ">quid</rdg><wit>perhaps correctly</wit></app> te cogebat <app xml:id="d1e671"><lem xml:id="d1e670">multos</lem><rdg xml:id="d1e672" source="#Heinsius">fictos</rdg><rdg xml:id="d1e674" wit="#Ϛ">multo</rdg><rdgGrp source="#Liberman2002"><rdg xml:id="d1e677">pulso</rdg><rdg xml:id="d1e679">uerso</rdg></rdgGrp></app> pallere <app xml:id="d1e684"><lem xml:id="d1e683">colores</lem><rdg xml:id="d1e685" wit="#Ϛ">colore</rdg></app></l>
-<l n="40">et fletum invitis <app xml:id="d1e692"><lem xml:id="d1e691">ducere</lem><note>N at first prints ducere twice.</note></app> luminibus?</l>
-<l n="41">quis ego nunc pereo, similis <app xml:id="d1e701"><lem xml:id="d1e700">moniturus</lem><rdg xml:id="d1e702" wit="#N">moriturus</rdg><wit>at first, then corrected</wit></app> amantes:</l>
-<l n="42"><app xml:id="d1e711"><lem xml:id="d1e710" source="#Wyngaarden">non ullis</lem><rdg xml:id="d1e712" wit="#Ω">o nullis</rdg></app> tutum<app xml:id="d1e717"><lem xml:id="d1e716"/><rdg xml:id="d1e718" source="#Heyworth"> est</rdg><wit>(perhaps)</wit></app> credere blanditiis!</l>
+<l n="39"><app xml:id="d1e663"><lem xml:id="d1e662">quis</lem><rdg xml:id="d1e664" wit="#Ϛ">quid</rdg><note target="#d1e664">perhaps correctly</note></app> te cogebat <app xml:id="d1e671"><lem xml:id="d1e670">multos</lem><rdg xml:id="d1e672" source="#Heinsius">fictos</rdg><rdg xml:id="d1e674" wit="#Ϛ">multo</rdg><rdgGrp source="#Liberman2002"><rdg xml:id="d1e677">pulso</rdg><rdg xml:id="d1e679">uerso</rdg></rdgGrp></app> pallere <app xml:id="d1e684"><lem xml:id="d1e683">colores</lem><rdg xml:id="d1e685" wit="#Ϛ">colore</rdg></app></l>
+<l n="40">et fletum invitis <app xml:id="d1e692"><lem xml:id="d1e691">ducere</lem><note>the first (subsequently corrected) hand in N prints ducere twice.</note></app> luminibus?</l>
+<l n="41">quis ego nunc pereo, similis <app xml:id="d1e701"><lem xml:id="d1e700">moniturus</lem><rdg xml:id="d1e702" wit="#N">moriturus</rdg><note target="#d1e702">at first, then corrected</note></app> amantes:</l>
+<l n="42"><app xml:id="d1e711"><lem xml:id="d1e710" source="#Wyngaarden">non ullis</lem><rdg xml:id="d1e712" wit="#Ω">o nullis</rdg></app> tutum<app xml:id="d1e717"><lem xml:id="d1e716"/><rdg xml:id="d1e718" source="#Heyworth"> est</rdg><note target="#d1e718">(perhaps)</note></app> credere blanditiis!</l>
 <app xml:id="app-lem-l15-l16" exclude="#app-rdg-Pescani-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
-  <lem xml:id="d1e726">
+  <lem xml:id="d1e726" source="#Heyworth">
      <surplus reason="interpolation">
         <l n="15" xml:id="l15">Alphesiboea suos ulta est pro coniuge fratres,</l>
         <l n="16" xml:id="l16">sanguinis et cari vincula rupit amor.</l>
      </surplus>
   </lem>
- <wit>Heyworth considers these lines to be an interpolation.</wit>
+ <note target="#d1e726">considered these lines to be an interpolation.</note>
 </app></ab>
 
          

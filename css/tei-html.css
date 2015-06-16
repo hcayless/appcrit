@@ -77,19 +77,21 @@ div.apparatus tei-app.app-copy {
   display: none;
 }
 div.apparatus tei-app span.source {
+  font-style: italic;
   font-weight: normal;
-  margin-right: .5em;
+  margin-right: .3em;
 }
-div.apparatus tei-app>span {
+div.apparatus tei-app>span.lem {
   font-weight: bold;
   margin-right: .5em;
 }
-div.apparatus tei-app>span:before {
+div.apparatus tei-app>span.lem:before {
   content: '\a';
   white-space: pre;
 }
 div.apparatus tei-app>tei-lem {
   font-weight: bold;
+  margin-left: .2em;
   display: inline;
 }
 div.apparatus tei-app tei-rdg {
@@ -101,11 +103,12 @@ div.apparatus tei-rdgGrp {
 div.apparatus tei-app tei-wit {
   display: inline;
   font-style: italic;
-  margin-right: .5em;
+  margin-right: .3em;
 }
 div.apparatus tei-app>tei-note {
   display: inline;
   font-style: italic;
+  margin-right: .5em;
 }
 tei-text button.app {
   height: .5em
@@ -118,10 +121,11 @@ tei-text span.apps {
 
 /* Apparatus tooltips */
 .ui-tooltip-content div.apparatus span.source {
+  font-style: italic;
   font-weight: normal;
-  margin-right: .5em;
+  margin-right: .3em;
 }
-.ui-tooltip-content div.apparatus>span {
+.ui-tooltip-content div.apparatus>span.lem {
   display: none;
 }
 .ui-tooltip-content div.apparatus tei-lem {
@@ -137,11 +141,12 @@ tei-text span.apps {
 .ui-tooltip-content div.apparatus tei-wit {
   display: inline;
   font-style: italic;
-  margin-right: .5em;
+  margin-right: .3em;
 }
 .ui-tooltip-content div.apparatus tei-note {
   display: inline;
   font-style: italic;
+  margin-right: .3em;
 }
 .highlight {
   background: yellow;
@@ -165,7 +170,6 @@ tei-text span.apps {
 }
 .ui-dialog-content tei-rdg {
   display: inline;
-  margin-right: .3em;
 }
 .ui-dialog-content tei-rdg:hover {
   cursor: pointer;
@@ -177,19 +181,25 @@ tei-text span.apps {
 .ui-dialog-content tei-wit {
   display: inline;
   font-style: italic;
-  margin-right: .2em;
+  margin-right: .3em;
 }
-.ui-dialog-content tei-wit:hover {
+.ui-dialog-content tei-note[data-id]:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+.ui-dialog-content span[data-id]:hover {
   cursor: pointer;
   text-decoration: underline;
 }
 .ui-dialog-content tei-note {
   display: inline;
   font-style: italic;
+  margin-right: .3em;
 }
 .ui-dialog-content span.source {
   font-weight: normal;
-  margin-right: .2em;
+  font-style: italic;
+  margin-right: .3em;
 }
 
 /* Choice elements */
@@ -1561,10 +1571,12 @@ tei-secFol:before {
 tei-secl {
 }
 tei-secl>*:first-child:before {
-  content: "[";
+  content: "\a[";
+  white-space: pre;
 }
 tei-secl>*:last-child:after {
-  content: "]";
+  content: "]\a\a";
+  white-space: pre;
 }
 tei-seg {
   /* Empty Set Rule */
