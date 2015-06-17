@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="schema/tei_all.rnc" type="application/relax-ng-compact-syntax"?>
-<?xml-stylesheet type="text/css" href="xslt/TEI2HTML5Custom.xsl"?>
+<?xml-stylesheet type="text/xsl" href="xslt/TEI2HTML5Custom.xsl"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
