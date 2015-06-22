@@ -80,7 +80,7 @@ This way of doing things has a number of potentially useful implications: becaus
 ##Conclusion
 The proposals presented here cover a lot of ground: they involve the acceptance of TEI as an appropriate format for modeling critical editions, the revision of TEI to permit operations currently unsupported, the use of web standards that are still in the development phase, and which are not supported in all browsers, and the adoption of what TEI Simple calls a “processing model” for TEI—meaning the acceptance of a defined presentation for TEI elements. Whether this is a viable way forward for publishing interactive critical editions will depend on whether editors are willing to produce TEI (or work with encoders to do so) and whether having the kinds of functionality represented here are worth the additional work and expense of doing that encoding. If, however, the main obstacle to the wide adoption and publication of digital critical editions has been the lack of a clear way to do it, then perhaps this paper points a way forward out of the morass of choices.
 
-## References
+## Notes
 <a nam="1">1.</a> Here, I am using the term “work” in more or less the way Bordalejo (2013) does: “the work is a conception in the mind of an author at a particular point in time that serves as a minimal denominator to identify its remaining physical manifestations.”
 
 <a nam="2">2.</a> If our publication workflow involves (1) a TEI document, processed by (2) XSLT, output to (3) HTML, which is decorated using (4) CSS and Javascript, then customization of the publication hinges on what can be done to #3, which depends not just on #4, but what #1 contains and what #2 is able to output. Customization therefore implicates (potentially) the entire workflow.
@@ -91,7 +91,7 @@ The proposals presented here cover a lot of ground: they involve the acceptance 
 
 <a name="5">5.</a> Peter Robinson, in a comment on a draft of notes toward the revision of the Critical Apparatus chapter of the Guidelines.
 
-## Bibliography (incomplete)
+## References (incomplete)
 
 Bodard, Gabriel & Juan Garcés, “Open Source Critical Editions: a Rationale,” in *Text Editing, Print, and the Digital World,* edd. Marilyn Deegan & Kathryn Sutherland, Ashgate, (2009), pp. 83–98.
 
