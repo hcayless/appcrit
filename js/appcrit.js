@@ -30,7 +30,6 @@ var swapLem = function(oldrdg) {
 			//reacquire handles to newlem and newrdg in the altered DOM
 			newlem = $("#" + newlem.attr("id"));
 			newrdg = $("#" + newrdg.attr("id"));
-			//TODO: button relocation isn't working...
 			var l, btn;
 			if (app.find("tei-l").length > 0 && app.find("#button-" + app.attr("id").length == 0)) {
 				// the app doesn't contain the button clicked, i.e. not a line-containing app or one containing only a rdg
@@ -199,8 +198,6 @@ $(function() {
 		});
 	});
 
-	//TODO: Refactor to support deciding which apparatus function to apply
-	//			based on its context. E.g., apps with lem/rdg that contain lines
 	$("tei-app").each(function(i, elt) {
 		var app = $(elt).clone();
 		var n, lines
