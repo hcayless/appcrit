@@ -111,8 +111,8 @@
 <app xml:id="app-rdg-Pescani-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Markland-l15-l16 #app-rdg-Lachmann-l15-l16">
  <rdg xml:id="d1e354" source="#Pescani">
      <secl>
-        <l sameAs="#l15"/>
-        <l sameAs="#l16"/>
+        <l copyOf="#l15"/>
+        <l copyOf="#l16"/>
      </secl>
   </rdg><note target="#d1e354">secluded these lines.</note>
 </app>
@@ -125,8 +125,8 @@
 <l n="20">ut semel Haemonio tabuit hospitio.</l>
 <app xml:id="app-rdg-Markland-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Pescani-l15-l16 #app-rdg-Lachmann-l15-l16">
   <rdg xml:id="d1e395" source="#Markland">
-     <l sameAs="#l15"/>
-     <l sameAs="#l16"/>
+     <l copyOf="#l15"/>
+     <l copyOf="#l16"/>
   </rdg>
   <note target="#d1e395">moved lines 15-16 after 20.</note>
 </app>
@@ -134,8 +134,8 @@
 <l n="22">occidit, Argivae fama pudicitiae.</l>
 <app xml:id="app-rdg-Lachmann-l15-l16" exclude="#app-lem-l15-l16 #app-rdg-Pescani-l15-l16 #app-rdg-Markland-l15-l16">
   <rdg xml:id="d1e433" source="#Lachmann">
-     <l sameAs="#l15"/>
-     <l sameAs="#l16"/>
+     <l copyOf="#l15"/>
+     <l copyOf="#l16"/>
   </rdg>
   <note target="#d1e433">moved lines 15-16 after 22.</note>
 </app>
@@ -160,10 +160,10 @@
        </lem>
        <rdg source="#Postgate" xml:id="rdg-Postgate-l29-l32" exclude="#rdg-Georg-l27-l32">
          <surplus>
-           <l sameAs="#l29"/>
-           <l sameAs="#l30"/>
-           <l sameAs="#l31"/>
-           <l sameAs="#l32"/>
+           <l copyOf="#l29"/>
+           <l copyOf="#l30"/>
+           <l copyOf="#l31"/>
+           <l copyOf="#l32"/>
          </surplus>
        </rdg><note target="#rdg-Postgate-l29-l32">considered these lines to be interpolated.</note>
     </app>
@@ -172,8 +172,8 @@
 </app>
 <app xml:id="app-rdg-Housman-l25-26" exclude="#app-lem-l25-l26">
   <rdg xml:id="d1e603" source="#Housman">
-     <l sameAs="#l25"/>
-     <l sameAs="#l26"/>
+     <l copyOf="#l25"/>
+     <l copyOf="#l26"/>
   </rdg>
   <note target="#d1e603">put these lines after 32.</note>
 </app>

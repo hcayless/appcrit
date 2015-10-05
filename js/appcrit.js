@@ -97,7 +97,7 @@ var swapLem = function(oldrdg) {
 var applyWit = function(wit) {
 	$("tei-text tei-rdg[wit]").each(function(i,elt) {
 		var foo = $(elt);
-		if (!foo.attr("sameAs")) {
+		if (!foo.attr("copyOf")) {
 			foo.attr("wit").split(/ /).forEach(function(val) {
 				if (val == wit) {
 					swapLem(foo);
@@ -109,7 +109,7 @@ var applyWit = function(wit) {
 var applySource = function(source) {
 	$("tei-text tei-rdg[source]").each(function(i,elt){
 		var foo = $(elt);
-		if (!foo.attr("sameAs")) {
+		if (!foo.attr("copyOf")) {
 			foo.attr("source").split(/ /).forEach(function(val) {
 				if (val == source) {
 					swapLem(foo);
@@ -185,15 +185,15 @@ $(function() {
 		$(elt).after(" <span class=\"source\">" + wit + " " + source + "</span>");
 	}
 
-	// Pull content into @sameAs elements
-	$("*[sameAs]").each(function(i, elt) {
+	// Pull content into @copyOf elements
+	$("*[copyOf]").each(function(i, elt) {
 		var e = $(elt);
-		e.html($(e.attr("sameAs")).clone().contents());
+		e.html($(e.attr("copyOf")).clone().contents());
 		// have to rewrite ids in copied content so there are no duplicates
 		e.find("*[id]").each(function(i, elt) {
-			$(elt).attr("sameAs", "#" + $(elt).attr("id"));
+			$(elt).attr("copyOf", "#" + $(elt).attr("id"));
 			$(elt).attr("id", $(elt).attr("id") + Math.random().toString(36).substr(2));
-			$($(elt).attr("sameAs")).attr("data-copy", "#" + $(elt).attr("id"));
+			$($(elt).attr("copyOf")).attr("data-copy", "#" + $(elt).attr("id"));
 			$(elt).addClass("app-copy");
 		});
 	});
@@ -206,13 +206,13 @@ $(function() {
 		if ((lines = app.find("tei-l")).length > 0) {
 			n = $(lines[0]).attr("n");
 			if (!n) {
-				n = $($(lines[0]).attr("sameAs")).attr("n");
+				n = $($(lines[0]).attr("copyOf")).attr("n");
 			}
 			if (lines.length > 1) {
 				if ($(lines[lines.length - 1]).attr("n")) {
 					n += "–" + $(lines[lines.length - 1]).attr("n");
 				} else {
-					n += "–" + $($(lines[lines.length - 1]).attr("sameAs")).attr("n");
+					n += "–" + $($(lines[lines.length - 1]).attr("copyOf")).attr("n");
 				}
 			}
 			var l = $(elt).find("tei-lem").find("tei-l");
@@ -225,7 +225,7 @@ $(function() {
 		} else {
 			n = $(elt).parent("tei-l").attr("n");
 			if (!n) {
-				n = $($(elt).parent("tei-l").attr("sameAs")).attr("n");
+				n = $($(elt).parent("tei-l").attr("copyOf")).attr("n");
 			}
 			$(elt).parent("tei-l").append("<button id=\"button-" + $(elt).attr("id") + "\" title=\"\" class=\"app\" data-app=\"" + $(elt).attr("id") + "\">…</button>");
 		}
@@ -299,8 +299,8 @@ $(function() {
 				$(elt).click(function(evt) {
 					var rdg = $("#" + $(evt.currentTarget).attr("data-id"));
 					swapLem(rdg);
-					if (rdg.attr("sameAs")) {
-						swapLem($(rdg.attr("sameAs")));
+					if (rdg.attr("copyOf")) {
+						swapLem($(rdg.attr("copyOf")));
 					}
 					if (rdg.attr("data-copy")) {
 						swapLem($(rdg.attr("data-copy")));
